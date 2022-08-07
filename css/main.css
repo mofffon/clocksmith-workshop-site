@@ -1,0 +1,52 @@
+body{
+    background-color:#00a2e8;
+    font-size: 17px;
+}
+
+a:link, a:visited, a:hover, a:active{
+
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.kluczyki img{
+    width:80%;
+    height: auto;
+    margin: auto;
+    margin-top:12px;    
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-left:24px;
+    margin-right:24px;
+}
+
+.kluczyki figcaption
+{ 
+	text-align: center;
+}
+
+.nav-link{
+    font-size: large;
+}
+
+.first-page img, .first-page p{
+    width:100%;
+    margin-top:12px;
+}
+
+.first-page img{
+    min-width: 200;
+}
+
+@media screen and (max-width:991px){
+    .show-hide  { display:none; }
+}
