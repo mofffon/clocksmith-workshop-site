@@ -10,67 +10,77 @@
     <body>
         <div class="container">
             <header>
-                <div >
+                <a href="tel:042508662339">
                     <figure >
                         <img class="banner" src="./images/baner1.png"/>
                     </figure>
-                </div>
+                </a>
             </header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="./index.html">Home</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./dorabianie-klucz.html">Dorabianie Kluczy</a>
+                    <a class="nav-link" href="./dorabianie-klucz.html">Dorabianie Kluczy</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./otwieranie-aut.html">Otwieranie Aut</a>
+                    <a class="nav-link" href="./otwieranie-aut.html">Otwieranie Aut</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="./kontakt.html">Kontakt</a>
+                    <a class="nav-link" href="./kontakt.html">Kontakt</a>
                     </li>
-                  </ul>
+                    <li class="nav-item">
+                      <form action="http://maps.google.com/maps" method="get" target="_blank">
+                        <input hidden type="text" name="saddr" />
+                        <input hidden type="hidden" name="daddr" value="ul. K. K. Wielkiego 24, 32-300" />
+                        <a class="nav-link directions" href="">Jak Dojadę</a>
+                      </form>
+                      
+                    </li>
+                </ul>
                 </div>
-              </nav>
+            </nav>
             
             <hr>
-            <section class="bg-light">
-            
-                <div class="row">
+            <section class="bg-light" style="display:flex; flex-wrap: wrap;">
 
-                    <div class="col-4">
-                        <h2><b>Kontakt</b></h2>
-                        <h2>Olkusz</h2>
-                        <p>"Skarbek" na parterze</p>
-                        <p>ul. K. K. Wielkiego 24, 32-300</p>
-                        <p>Tel: 508-66&#50;-339</p>
-                    </div>
+              <div class="col-4 address" >
+                
+                  <div class="directions" style="cursor:pointer;">
+                    <h2>Olkusz</h2>
+                    <p>"Skarbek" na parterze</p>
+                    <p>ul. K. K. Wielkiego 24, 32-300</p>
+                  </div>
+                  <a href="tel:042508662339">
+                    <p>Tel: 508-66&#50;-339</p>
+                  </a>
+              </div>
 
-                    <!-- width="600" 
-                        height="450"  -->
-
-                    <div class="col box">
-                      <iframe class=""
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1516.1209839518976!2d19.56527059298127!3d50.2769667067826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e37f2c18ee1d%3A0x7ffc47a22e3d107b!2sDORABIANIE%20KLUCZY%20-%20ZEGARMISTRZ!5e0!3m2!1spl!2spl!4v1659284398700!5m2!1spl!2spl" 
-                        
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                      </iframe>
-                    </div>
-                </div>
+              <div class="col box">
+                <iframe class=""
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1516.1209839518976!2d19.56527059298127!3d50.2769667067826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e37f2c18ee1d%3A0x7ffc47a22e3d107b!2sDORABIANIE%20KLUCZY%20-%20ZEGARMISTRZ!5e0!3m2!1spl!2spl!4v1659284398700!5m2!1spl!2spl" 
+                  
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
             </section>
 
-            <footer style="margin-top: 12px; margin-bottom:12px;" class="col bg-light">Olkusz Tel: 508-66&#50;-339</footer>
+            <a href="tel:042508662339">
+              <footer style="margin-top: 12px; margin-bottom:12px;" class="col bg-light">Olkusz Tel: 508-66&#50;-339</footer>
+            </a>
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./start.js"></script>
     </body>
 </html>
