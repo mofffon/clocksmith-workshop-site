@@ -53,11 +53,11 @@ h1,h2,h3,h4,h5,h6,p{
     padding-top: 16px;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 768px){
     .show-hide  { display:none; }
 }
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 768px){
     .row-item { border:3px solid red; border-radius: 15px;}
 }
 
@@ -81,8 +81,11 @@ h1,h2,h3,h4,h5,h6,p{
     height: 0;
     overflow: hidden;
 }
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 768px){
     .address{
-        font-size: ;
+        font-size: 10px;
+    }
+    .address h3{
+        font-size:20px;
     }
 }
