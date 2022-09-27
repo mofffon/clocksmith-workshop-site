@@ -36,12 +36,11 @@
                     <a class="nav-link" href="./kontakt.html">Kontakt</a>
                     </li>
                     <li class="nav-item">
-                      <form action="http://maps.google.com/maps" method="get" target="_blank">
+                      <form action="https://maps.google.com/maps" method="get" target="_blank">
                         <input hidden type="text" name="saddr" />
                         <input hidden type="hidden" name="daddr" value="ul. K. K. Wielkiego 24, 32-300" />
                         <a class="nav-link directions" href="">Jak Dojadę</a>
                       </form>
-                      
                     </li>
                 </ul>
                 </div>
@@ -60,6 +59,11 @@
                   <a href="tel:042508662339">
                     <p>Tel: 508-66&#50;-339</p>
                   </a>
+
+                  <div>
+                    <button href="tel:042508662339" id="phone" class="btn btn-primary" style="width: 120px; display: block; margin:auto; margin-top:5vw;">Zadzwoń!</button>
+                    <button type="submit" class="directions btn btn-primary" style="width: 120px; display: block; margin:auto; margin-top:8vw;">Jak Dojadę</button> 
+                  </div>
               </div>
 
               <div class="col box">
@@ -82,5 +86,14 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
         <script type="text/javascript" src="./start.js"></script>
+        <script>
+
+          window.addEventListener("load",()=>{
+            document.querySelector("#phone").addEventListener("click", (e) =>{
+              console.log("It works");
+            }, false);
+          }, false);
+
+        </script>
     </body>
 </html>
